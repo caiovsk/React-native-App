@@ -39,4 +39,8 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#A4BDD2'
   },
+  group: {
+    flexDirection: 'row',
+    color: 'red'
+  }
 });
