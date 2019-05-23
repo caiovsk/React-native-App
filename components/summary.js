@@ -37,7 +37,6 @@ export default class summary extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#A4BDD2',
-    color: red
+    backgroundColor: '#A4BDD2'
   },
 });
