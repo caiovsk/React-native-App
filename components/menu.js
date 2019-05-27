@@ -181,6 +181,7 @@ if (!$.isEmptyObject(errors))
     let totalFood=parseInt(foodTemp.substring(foodTemp.length-2,foodTemp.length));
     let totalDrink=parseInt(drinkTemp.substring(drinkTemp.length-2,drinkTemp.length));
     let total=(totalFood * amount1Temp) + (totalDrink * amount2Temp);
+    let totalItems=(amount1Temp) + (amount2Temp);
     if(foodTemp == '' && drinkTemp || '' || amount1Temp == '' || amount2Temp == ''){
       return "error";
     }else{
@@ -188,7 +189,9 @@ if (!$.isEmptyObject(errors))
         summaryValue: total,
         itemName: this.state.food,
         drinkName: this.state.drink,
-        thisPlace: this.state.restName
+        thisPlace: this.state.restName,
+        items1: this.state.amount1Value,
+        items2: this.state.amount2Value
         });
     }
   }
