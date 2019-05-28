@@ -182,7 +182,7 @@ if (!$.isEmptyObject(errors))
     let totalDrink=parseInt(drinkTemp.substring(drinkTemp.length-2,drinkTemp.length));
     let total=(totalFood * amount1Temp) + (totalDrink * amount2Temp);
     let totalItems=(amount1Temp) + (amount2Temp);
-    if(foodTemp == '' && drinkTemp || '' || amount1Temp == '' || amount2Temp == ''){
+    if(foodTemp == '' || drinkTemp == '' && amount1Temp == '' || amount2Temp == ''){
       return "error";
     }else{
       Actions.summary({
