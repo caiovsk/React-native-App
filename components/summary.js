@@ -26,7 +26,7 @@ export default class summary extends Component {
     return(
       <View style={styles.container}>
       <Text style={styles.text}> Thank You For Your Order @ {this.state.placeName} </Text>
-      <Text style={styles.text}> Order Summary: {this.state.itemFood} {this.state.item1} </Text>
+      <Text style={styles.text}> Order Summary: {this.state.itemFood}</Text>
       <Text style={styles.text}> Quantity: {this.state.item1} </Text>
       <Text style={styles.text}> {this.state.itemDrink}</Text>
       <Text style={styles.text}> Quantity: {this.state.item2} </Text>
