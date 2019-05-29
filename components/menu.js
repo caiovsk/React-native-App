@@ -123,7 +123,7 @@ if (!$.isEmptyObject(errors))
 
     return (
       <View style={styles.container}>
-      <Text style={styles.rest}> {this.state.restName}</Text>
+      <Text style={styles.rest}> Menu: {this.state.restName}</Text>
         <View style={styles.viewRow2}>
                 <Dropdown
                       containerStyle={styles.dropdown2}
@@ -136,7 +136,7 @@ if (!$.isEmptyObject(errors))
                 <Dropdown
                       containerStyle={styles.dropdown2}
                       data={this.amount1}
-                      label='Choose quantity'
+                      label='Choose Food quantity'
                       onChangeText={(chosenAV1) => this.setState({ //after chosen, we make subjectCode equal to chosensc
                         amount1Value:chosenAV1 }
                         )}
@@ -154,7 +154,7 @@ if (!$.isEmptyObject(errors))
                 <Dropdown
                       containerStyle={styles.dropdown2}
                       data={this.amount2}
-                      label='Choose quantity'
+                      label='Choose Drink quantity'
                       onChangeText={(chosenAV2) => this.setState({ //after chosen, we make subjectCode equal to chosensc
                         amount2Value:chosenAV2 }
                         )}
