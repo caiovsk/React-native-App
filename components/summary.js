@@ -25,12 +25,13 @@ export default class summary extends Component {
   render() {
     return(
       <View style={styles.container}>
-      <Text style={styles.text}> Thank You For Your Order @ {this.state.placeName} </Text>
+      <Text style={styles.text}> Thank You For Your Order at {this.state.placeName} </Text>
       <Text style={styles.text}> Order Summary: {this.state.itemFood}</Text>
       <Text style={styles.text}> Quantity: {this.state.item1} </Text>
       <Text style={styles.text}> {this.state.itemDrink}</Text>
       <Text style={styles.text}> Quantity: {this.state.item2} </Text>
       <Text style={styles.text}> Total Cost: ${this.state.finalValue} </Text>
+      <Text style={styles.time}> Your order will be ready for pickup in 15 minutes </Text>
       <Text style={styles.group}> App developed by: Amy (45375038), Andy (45407142), Caio (45370990) </Text>
 
       </View>
