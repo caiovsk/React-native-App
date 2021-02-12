@@ -16,7 +16,7 @@ import Menu from './components/menu';
 import Summary from './components/summary';
 import Welcome from './components/welcome';
 
-export default class App extends Component<Props> {
+export default class App extends Component {
   //console.disableYellowBox = true;
   render() {
     return (
